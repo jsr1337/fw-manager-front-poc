@@ -19,20 +19,15 @@ export default function RulesUsage() {
   };
 
   return (
-    <div className="p-8 animate-fade-in">
+    <div className="p-8">
       <div className="mb-8">
-        <h1 className="text-4xl font-bold text-foreground mb-2 bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
-          Rules Usage
-        </h1>
-        <p className="text-muted-foreground text-lg">
+        <h1 className="text-3xl font-semibold text-foreground mb-2">Rules Usage</h1>
+        <p className="text-muted-foreground">
           Monitor firewall rule usage and hit counts
         </p>
       </div>
 
-      <div className="rounded-xl border bg-card shadow-xl hover-lift overflow-hidden">
-        <div className="bg-gradient-to-r from-success/5 to-primary/5 px-6 py-4 border-b">
-          <h2 className="text-lg font-semibold text-foreground">Rule Hit Statistics</h2>
-        </div>
+      <div className="rounded-lg border bg-card shadow-sm">
         <Table>
           <TableHeader>
             <TableRow>

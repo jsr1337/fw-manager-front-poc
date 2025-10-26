@@ -35,20 +35,15 @@ export default function Dashboard() {
   };
 
   return (
-    <div className="p-8 animate-fade-in">
+    <div className="p-8">
       <div className="mb-8">
-        <h1 className="text-4xl font-bold text-foreground mb-2 bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
-          Dashboard
-        </h1>
-        <p className="text-muted-foreground text-lg">
+        <h1 className="text-3xl font-semibold text-foreground mb-2">Dashboard</h1>
+        <p className="text-muted-foreground">
           Monitor firewall device synchronization status
         </p>
       </div>
 
-      <div className="rounded-xl border bg-card shadow-xl hover-lift overflow-hidden">
-        <div className="bg-gradient-to-r from-primary/5 to-accent/5 px-6 py-4 border-b">
-          <h2 className="text-lg font-semibold text-foreground">Device Sync Status</h2>
-        </div>
+      <div className="rounded-lg border bg-card shadow-sm">
         <Table>
           <TableHeader>
             <TableRow>
