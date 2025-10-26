@@ -31,16 +31,18 @@ export default function DeviceSearch() {
   const [selectedDevice, setSelectedDevice] = useState('');
 
   return (
-    <div className="p-8">
+    <div className="p-8 animate-fade-in">
       <div className="mb-8">
-        <h1 className="text-3xl font-semibold text-foreground mb-2">Search Device</h1>
-        <p className="text-muted-foreground">
+        <h1 className="text-4xl font-bold text-foreground mb-2 bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
+          Search Device
+        </h1>
+        <p className="text-muted-foreground text-lg">
           Select a device to view its firewall rule base
         </p>
       </div>
 
-      <div className="mb-6">
-        <label className="block text-sm font-medium mb-2">Device Name</label>
+      <div className="mb-6 glass-effect p-6 rounded-xl shadow-lg">
+        <label className="block text-sm font-semibold mb-3 text-foreground">Device Name</label>
         <Popover open={open} onOpenChange={setOpen}>
           <PopoverTrigger asChild>
             <Button
@@ -85,9 +87,11 @@ export default function DeviceSearch() {
       </div>
 
       {selectedDevice && (
-        <div className="rounded-lg border bg-card shadow-sm">
-          <div className="border-b px-6 py-4">
-            <h2 className="text-lg font-semibold">Firewall Rule Base - {selectedDevice}</h2>
+        <div className="rounded-xl border bg-card shadow-xl hover-lift overflow-hidden animate-fade-in">
+          <div className="bg-gradient-to-r from-primary/5 to-accent/5 px-6 py-4 border-b">
+            <h2 className="text-lg font-semibold bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
+              Firewall Rule Base - {selectedDevice}
+            </h2>
           </div>
           <Table>
             <TableHeader>
