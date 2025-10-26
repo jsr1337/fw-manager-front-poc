@@ -1,5 +1,6 @@
 {
   "name": "vite_react_shadcn_ts",
+  "homepage": "https://jsr1337.github.io/fw-manager-front-poc/",
   "private": true,
   "version": "0.0.0",
   "type": "module",
